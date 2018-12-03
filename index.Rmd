@@ -47,3 +47,5 @@ print(p.geomap, tag ='chart')
 --- .class
 
 ## Slide 4
+
+publish(dirname("BABDtest1")), host="dropbox")

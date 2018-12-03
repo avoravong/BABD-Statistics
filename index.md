@@ -21,14 +21,14 @@ knit        : slidify::knit2slides
 
 ## Slide 2
 <!-- GeoChart generated in R 3.5.1 by googleVis 0.6.3 package -->
-<!-- Mon Dec 03 12:50:29 2018 -->
+<!-- Mon Dec 03 14:06:06 2018 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataGeoChartID400c2dc7187b () {
+function gvisDataGeoChartID3bc445d86950 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -244,8 +244,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartGeoChartID400c2dc7187b() {
-var data = gvisDataGeoChartID400c2dc7187b();
+function drawChartGeoChartID3bc445d86950() {
+var data = gvisDataGeoChartID3bc445d86950();
 var options = {};
 options["width"] = 556;
 options["height"] = 347;
@@ -255,7 +255,7 @@ options["resolution"] = "provinces";
 options["colorAxis"] = {colors:['red', 'blue']};
 
     var chart = new google.visualization.GeoChart(
-    document.getElementById('GeoChartID400c2dc7187b')
+    document.getElementById('GeoChartID3bc445d86950')
     );
     chart.draw(data,options);
     
@@ -279,9 +279,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartGeoChartID400c2dc7187b);
+callbacks.push(drawChartGeoChartID3bc445d86950);
 })();
-function displayChartGeoChartID400c2dc7187b() {
+function displayChartGeoChartID3bc445d86950() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -305,11 +305,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID400c2dc7187b"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID3bc445d86950"></script>
  
 <!-- divChart -->
   
-<div id="GeoChartID400c2dc7187b" 
+<div id="GeoChartID3bc445d86950" 
   style="width: 556; height: 347;">
 </div>
 
@@ -322,3 +322,5 @@ callbacks.shift()();
 --- .class
 
 ## Slide 4
+
+publish(dirname("BABDtest1")), host="dropbox")
