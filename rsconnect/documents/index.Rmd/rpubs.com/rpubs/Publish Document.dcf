@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/445407/09e56062b48d451aa199fe85f6559300
+bundleId: https://api.rpubs.com/api/v1/document/445407/09e56062b48d451aa199fe85f6559300
+url: http://rpubs.com/avoravong/445407
+when: 1543836754.60672

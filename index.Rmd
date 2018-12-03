@@ -1,0 +1,49 @@
+---
+title       : Gun Violence in the United States
+subtitle    : BABD
+author      : Group Members
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Read-And-Delete
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Slide 2
+```{r echo =FALSE, results='asis', message=FALSE}
+library(slidify)
+library(googleVis)
+setwd("C:/Users/amvor/OneDrive/Desktop/All Material - R Studio/Project/slidifydemo")
+p <- read.csv("party strength by state.csv", header = T)
+p <- as.data.frame(p)
+attach(p)
+
+p.states <- p
+p.geomap <- gvisGeoChart(p.states, "state", "pct.d",
+                         options=list(region="US",
+                                      displaymode="regions",
+                                      resolution="provinces",
+                                      colorAxis="{colors:['red', 'blue']}"))
+plot(p.geomap)
+print(p.geomap, tag ='chart')
+```
+
+--- .class
+
+## Slide 3
+
+![Correlation](C:/Users/amvor/OneDrive/Desktop/All Matieral - R Studio/Project/slidifydemo/assets/img/cor - number of incidents v number of guns.png)
+
+--- .class
+
+## Slide 4
